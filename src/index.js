@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./components/NavBar";
+import App from "./components/App";
 import "./assets/styles/Main.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<Navbar />, document.getElementById("app"));
+const container = document.getElementById('app');
+
+// ReactDOM.render(__qué__, __dónde__);
+ReactDOM.render(<App />, container);

@@ -21,6 +21,7 @@
     "precss": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "remixicon": "^2.5.0",
     "remixicon-react": "^1.0.0"
   },

@@ -1,6 +1,4 @@
 import React from "react";
-import "../assets/styles/Main.scss";
-import 'bootstrap';
 import WhiteLogo from '../assets/images/logo-light.png';
 import DarkLogo from '../assets/images/logo-dark.png';
 import MenuLineIcon from 'remixicon-react/MenuLineIcon';
@@ -18,22 +16,19 @@ class NavBar extends React.Component {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item active">
-          <a className="nav-link" href="#home">Home</a>
+          <a className="nav-link" href="#home">Inicio</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#about">About</a>
+          <a className="nav-link" href="#about">Acerca de mi</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#service">Service</a>
+          <a className="nav-link" href="#service">Especialidades</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#blog">Blog</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#contact">Contact</a>
+          <a className="nav-link" href="#contact">Contacto</a>
         </li>
       </ul>
     </div>
