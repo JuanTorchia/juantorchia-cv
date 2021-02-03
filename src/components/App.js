@@ -9,6 +9,10 @@ import Speciality from './Speciality';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
 
 function App() {
     return (
