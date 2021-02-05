@@ -19,6 +19,8 @@ class Speciality extends React.Component {
       openModalIdiomas = () => this.setState({ isOpenIdiomas: true });
       closeModalIdiomas = () => this.setState({ isOpenIdiomas: false });
 
+    
+
     render() {
 return <section className="section bg-light" id="service">
 <div className="container">
@@ -27,10 +29,10 @@ return <section className="section bg-light" id="service">
             <h2 className="title">Especialidades <span className="title-border ml-4 pl-3"></span></h2>
         </div>
     </div>
-
+    
     <div className="row">
-        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-            <div className="service-box rounded position-relative">
+        <div className="col-lg-3 col-md-6 mt-4 pt-2 d-flex align-items-stretch">
+            <div className="service-box rounded position-relative d-flex flex-column h-100">
                 <div className="service-icon rounded"><ServerFillIcon className="ri-lightbulb-flash-fill"></ServerFillIcon></div>
                 <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Desarrollo Profesional</h5>
                 <p className="text-muted mt-3">
@@ -38,8 +40,8 @@ return <section className="section bg-light" id="service">
                 liderar, pensar de forma creativa y crear ambientes de colaboración.
                 Comence a desarrollar mis habilidades en estas areas para poder destacar profesionalmente.
                 </p>
-                <div>
-          <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalIOT}>
+                <div  style={{ marginTop: "auto" }} id="footer--card">
+          <Button variant="secondary" className="btn btn-primary mt-4" onClick={this.openModalIOT}>
             Certificados
           </Button>
         </div>
@@ -61,7 +63,7 @@ return <section className="section bg-light" id="service">
             </div>
                 </Modal.Body>
           <Modal.Footer>
-            <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalIOT}>
+            <Button variant="secondary" className="btn btn-primary mt-4" onClick={this.closeModalIOT}>
               Cerrar
             </Button>
           </Modal.Footer>
@@ -69,8 +71,8 @@ return <section className="section bg-light" id="service">
             </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-            <div className="service-box rounded position-relative">
+        <div className="col-lg-3 col-md-6 mt-4 pt-2 d-flex align-items-stretch">
+            <div className="service-box rounded position-relative d-flex flex-column h-100" >
                 <div className="service-icon rounded"><Window2 className="ri-window-2-fill"></Window2></div>
                 <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Desarrollo Web</h5>
                 <p className="text-muted mt-3">
@@ -78,8 +80,8 @@ return <section className="section bg-light" id="service">
                 y especializarme en estos lenguajes.
                 Actualmente estoy aprendiendo REACT y poniendo en practica todo lo aprendido.
                 </p>
-                <div>
-                <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalDEV}>
+                <div style={{ marginTop: "auto" }}>
+                <Button variant="secondary" className="btn btn-primary mt-4 mt-auto" onClick={this.openModalDEV}>
                     Certificados
                 </Button>
                 </div>
@@ -100,7 +102,7 @@ return <section className="section bg-light" id="service">
                     </div>
                         </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalDEV}>
+                    <Button variant="primarys" className="btn btn-primary mt-4" onClick={this.closeModalDEV}>
                     Cerrar
                     </Button>
                 </Modal.Footer>
@@ -108,16 +110,16 @@ return <section className="section bg-light" id="service">
             </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-            <div className="service-box rounded position-relative">
+        <div className="col-lg-3 col-md-6 mt-4 pt-2 d-flex align-items-stretch">
+            <div className="service-box rounded position-relative d-flex flex-column h-100">
                 <div className="service-icon rounded"><GitMergeFillIcon className="ri-award-fill"></GitMergeFillIcon></div>
                 <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">DevOps</h5>
                 <p className="text-muted mt-3">
                 Trabajo como SysAdmin LINUX y WINDOWS comence a estudiar DevOps automatizar las tareas
                 que realizo habitualmente en mi trabajo, esto me llevo a aprender las metodologias de DevOps.      
                 </p>
-                <div>
-                <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalDEVOPS}>
+                <div style={{ marginTop: "auto" }}>
+                <Button variant="secondary" className="btn btn-primary mt-4 mt-auto" onClick={this.openModalDEVOPS}>
                     Certificados
                 </Button>
                 </div>
@@ -138,7 +140,7 @@ return <section className="section bg-light" id="service">
                     </div>
                         </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalDEVOPS}>
+                    <Button variant="primarys" className="btn btn-primary mt-4" onClick={this.closeModalDEVOPS}>
                     Cerrar
                     </Button>
                 </Modal.Footer>
@@ -146,8 +148,8 @@ return <section className="section bg-light" id="service">
             </div>
         </div>
         
-        <div className="col-lg-3 col-md-6 mt-4 pt-2">
-            <div className="service-box rounded position-static">
+        <div className="col-lg-3 col-md-6 mt-4 pt-2 d-flex align-items-stretch">
+            <div className="service-box rounded position-static d-flex flex-column h-100">
                 <div className="service-icon rounded"><GitMergeFillIcon className="ri-award-fill"></GitMergeFillIcon></div>
                 <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Idiomas</h5>
                 <p className="text-muted mt-3">
@@ -155,8 +157,8 @@ return <section className="section bg-light" id="service">
                 para hablarlo de forma profesional, calaboro en proyectos OpenSource lo que me hace estar en contacto
                 con personas de todo el mundo y utilizamos el Ingles para comunicarnos.
                 </p>
-                <div>
-                <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalIdiomas}>
+                <div style={{ marginTop: "auto" }}>
+                <Button variant="secondary" className="btn btn-primary mt-4 mt-auto" onClick={this.openModalIdiomas}>
                     Certificados
                 </Button>
                 </div>
@@ -177,7 +179,7 @@ return <section className="section bg-light" id="service">
                     </div>
                         </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalIdiomas}>
+                    <Button variant="primarys" className="btn btn-primary mt-4" onClick={this.closeModalIdiomas}>
                     Cerrar
                     </Button>
                 </Modal.Footer>

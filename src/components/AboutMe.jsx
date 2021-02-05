@@ -13,8 +13,8 @@ class AboutMe extends React.Component {
 return <section className="section" id="about">
   <div className="container">
     <div className="row">
-      <div className="col-12 mb-4">                        
-        <h2 className="title">Acerca de mi <span className="title-border ml-4 pl-3" /></h2>                        
+      <div className="col-12 mb-4">
+        <h2 className="title">Acerca de mi <span className="title-border ml-4 pl-3" /></h2>
       </div>
     </div>
     <div className="row">
