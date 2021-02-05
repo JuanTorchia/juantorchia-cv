@@ -3,6 +3,7 @@ import GitMergeFillIcon from 'remixicon-react/GitMergeFillIcon';
 import Window2 from 'remixicon-react/Window2FillIcon';
 import ServerFillIcon from 'remixicon-react/ServerFillIcon';
 import { Modal, Button } from "react-bootstrap";
+import GalleryDev from './GalleryDev';
 
 class Speciality extends React.Component {
     state = {
@@ -15,23 +16,27 @@ class Speciality extends React.Component {
       closeModalIOT = () => this.setState({ isOpenIOT: false });
       openModalDEVOPS = () => this.setState({ isOpenDEVOPS: true });
       closeModalDEVOPS = () => this.setState({ isOpenDEVOPS: false });
+      openModalIdiomas = () => this.setState({ isOpenIdiomas: true });
+      closeModalIdiomas = () => this.setState({ isOpenIdiomas: false });
 
     render() {
-return <section class="section bg-light" id="service">
-<div class="container">
-    <div class="row">
-        <div class="col-12 mb-4">
-            <h2 class="title">Especialidades <span class="title-border ml-4 pl-3"></span></h2>
+return <section className="section bg-light" id="service">
+<div className="container">
+    <div className="row">
+        <div className="col-12 mb-4">
+            <h2 className="title">Especialidades <span className="title-border ml-4 pl-3"></span></h2>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="service-box rounded position-relative">
-                <div class="service-icon rounded"><ServerFillIcon class="ri-lightbulb-flash-fill"></ServerFillIcon></div>
-                <h5 class="font-size-17 font-weight-semibold mt-4 pt-2">SysAdmin</h5>
-                <p class="text-muted mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum, mauris sed faucibus dignissim, ligula nunc congue risus, eu tincidunt nulla enim et odio. Quisque in lacus in nibh interdum pharetra. Curabitur eu diam risus. Praesent nulla velit, sodales ac tincidunt ac, venenatis id est. Integer quis lobortis ex. Sed tempus risus eget placerat malesuada. Maecenas vel efficitur libero. Proin vestibulum purus vitae mi gravida pulvinar. Nunc non lorem pharetra, dictum augue non, ultrices leo.
+    <div className="row">
+        <div className="col-lg-3 col-md-6 mt-4 pt-2">
+            <div className="service-box rounded position-relative">
+                <div className="service-icon rounded"><ServerFillIcon className="ri-lightbulb-flash-fill"></ServerFillIcon></div>
+                <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Desarrollo Profesional</h5>
+                <p className="text-muted mt-3">
+                Dentro de un mundo cada vez más competitivo, el desarrollo profesional implica comunicar,
+                liderar, pensar de forma creativa y crear ambientes de colaboración.
+                Comence a desarrollar mis habilidades en estas areas para poder destacar profesionalmente.
                 </p>
                 <div>
           <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalIOT}>
@@ -40,9 +45,20 @@ return <section class="section bg-light" id="service">
         </div>
         <Modal animation='true' size="lg" show={this.state.isOpenIOT} onHide={this.closeModalCVIOT}>
           <Modal.Header >
-            <Modal.Title><h2 className="mb-0 title">3 Curriculum Vitae en React <span className="title-border ml-4 pl-3" /></h2></Modal.Title>
+            <Modal.Title><h2 className="mb-0 title">Desarrollo Profesional<span className="title-border ml-4 pl-3" /></h2></Modal.Title>
           </Modal.Header>
-          <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Proyecto</h5>
+          <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Certificados</h5>
+          <div className="row">
+                {GalleryDev.map( ({id, description, src, title}) => (
+          
+            <div className="column" key={id}>
+                <a href={src} target="_blank" rel="noreferrer noopener"><img src={src} alt={description} style={{width: '100%'}} /></a>
+                <div className={title}>
+                <p>{title}</p>
+                </div>
+            </div>
+          ))}
+            </div>
                 </Modal.Body>
           <Modal.Footer>
             <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalIOT}>
@@ -53,12 +69,14 @@ return <section class="section bg-light" id="service">
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="service-box rounded position-relative">
-                <div class="service-icon rounded"><Window2 class="ri-window-2-fill"></Window2></div>
-                <h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Desarrollo</h5>
-                <p class="text-muted mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum, mauris sed faucibus dignissim, ligula nunc congue risus, eu tincidunt nulla enim et odio. Quisque in lacus in nibh interdum pharetra. Curabitur eu diam risus. Praesent nulla velit, sodales ac tincidunt ac, venenatis id est. Integer quis lobortis ex. Sed tempus risus eget placerat malesuada. Maecenas vel efficitur libero. Proin vestibulum purus vitae mi gravida pulvinar. Nunc non lorem pharetra, dictum augue non, ultrices leo.
+        <div className="col-lg-3 col-md-6 mt-4 pt-2">
+            <div className="service-box rounded position-relative">
+                <div className="service-icon rounded"><Window2 className="ri-window-2-fill"></Window2></div>
+                <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Desarrollo Web</h5>
+                <p className="text-muted mt-3">
+                Comence a estudiar los fundamentos de HTML, CSS y Javascript, para aparender las bases, fundamentos
+                y especializarme en estos lenguajes.
+                Actualmente estoy aprendiendo REACT y poniendo en practica todo lo aprendido.
                 </p>
                 <div>
                 <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalDEV}>
@@ -67,9 +85,19 @@ return <section class="section bg-light" id="service">
                 </div>
                 <Modal animation='true' size="lg" show={this.state.isOpenDEV} onHide={this.closeModalDEV}>
                 <Modal.Header >
-                    <Modal.Title><h2 className="mb-0 title">3 Curriculum Vitae en React <span className="title-border ml-4 pl-3" /></h2></Modal.Title>
+                    <Modal.Title><h2 className="mb-0 title">Desarrollo Web<span className="title-border ml-4 pl-3" /></h2></Modal.Title>
                 </Modal.Header>
-                <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Proyecto</h5>
+                <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Certificados</h5>
+                        <div className="row">
+                        {GalleryDev.map( ({id, description, src, title}) => (
+                    <div className="column" key={id}>
+                        <a href={src} target="_blank" rel="noreferrer noopener"><img src={src} alt={description} style={{width: '100%'}} /></a>
+                        <div className={title}>
+                        <p>{title}</p>
+                        </div>
+                    </div>
+                ))}
+                    </div>
                         </Modal.Body>
                 <Modal.Footer>
                     <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalDEV}>
@@ -80,12 +108,13 @@ return <section class="section bg-light" id="service">
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="service-box rounded position-relative">
-                <div class="service-icon rounded"><GitMergeFillIcon class="ri-award-fill"></GitMergeFillIcon></div>
-                <h5 class="font-size-17 font-weight-semibold mt-4 pt-2">DevOps</h5>
-                <p class="text-muted mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum, mauris sed faucibus dignissim, ligula nunc congue risus, eu tincidunt nulla enim et odio. Quisque in lacus in nibh interdum pharetra. Curabitur eu diam risus. Praesent nulla velit, sodales ac tincidunt ac, venenatis id est. Integer quis lobortis ex. Sed tempus risus eget placerat malesuada. Maecenas vel efficitur libero. Proin vestibulum purus vitae mi gravida pulvinar. Nunc non lorem pharetra, dictum augue non, ultrices leo.
+        <div className="col-lg-3 col-md-6 mt-4 pt-2">
+            <div className="service-box rounded position-relative">
+                <div className="service-icon rounded"><GitMergeFillIcon className="ri-award-fill"></GitMergeFillIcon></div>
+                <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">DevOps</h5>
+                <p className="text-muted mt-3">
+                Trabajo como SysAdmin LINUX y WINDOWS comence a estudiar DevOps automatizar las tareas
+                que realizo habitualmente en mi trabajo, esto me llevo a aprender las metodologias de DevOps.      
                 </p>
                 <div>
                 <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalDEVOPS}>
@@ -94,9 +123,19 @@ return <section class="section bg-light" id="service">
                 </div>
                 <Modal animation='true' size="lg" show={this.state.isOpenDEVOPS} onHide={this.closeModalDEVOPS}>
                 <Modal.Header >
-                    <Modal.Title><h2 className="mb-0 title">3 Curriculum Vitae en React <span className="title-border ml-4 pl-3" /></h2></Modal.Title>
+                    <Modal.Title><h2 className="mb-0 title">DevOps<span className="title-border ml-4 pl-3" /></h2></Modal.Title>
                 </Modal.Header>
-                <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Proyecto</h5>
+                <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Certificados</h5>
+                <div className="row">
+                        {GalleryDev.map( ({id, description, src, title}) => (
+                    <div className="column" key={id}>
+                        <a href={src} target="_blank" rel="noreferrer noopener"><img src={src} alt={description} style={{width: '100%'}} /></a>
+                        <div className={title}>
+                        <p>{title}</p>
+                        </div>
+                    </div>
+                ))}
+                    </div>
                         </Modal.Body>
                 <Modal.Footer>
                     <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalDEVOPS}>
@@ -106,6 +145,46 @@ return <section class="section bg-light" id="service">
                 </Modal>
             </div>
         </div>
+        
+        <div className="col-lg-3 col-md-6 mt-4 pt-2">
+            <div className="service-box rounded position-static">
+                <div className="service-icon rounded"><GitMergeFillIcon className="ri-award-fill"></GitMergeFillIcon></div>
+                <h5 className="font-size-17 font-weight-semibold mt-4 pt-2">Idiomas</h5>
+                <p className="text-muted mt-3">
+                Comence a estudiar Ingles a mis 6 años, fui a un colegio Bilingue tanto en mi educacion Inicial y Secundaria, actualmente estoy perfeccionándome
+                para hablarlo de forma profesional, calaboro en proyectos OpenSource lo que me hace estar en contacto
+                con personas de todo el mundo y utilizamos el Ingles para comunicarnos.
+                </p>
+                <div>
+                <Button variant="secondary" className="btn btn-primary mt-3" onClick={this.openModalIdiomas}>
+                    Certificados
+                </Button>
+                </div>
+                <Modal animation='true' size="lg" show={this.state.isOpenIdiomas} onHide={this.closeModalIdiomas}>
+                <Modal.Header >
+                    <Modal.Title><h2 className="mb-0 title">Idiomas <span className="title-border ml-4 pl-3" /></h2></Modal.Title>
+                </Modal.Header>
+                <Modal.Body><h5 class="font-size-17 font-weight-semibold mt-4 pt-2">Certificados</h5>
+                <div className="row">
+                        {GalleryDev.map( ({id, description, src, title}) => (
+                    <div className="column" key={id}>
+                        <a href={src} target="_blank" rel="noreferrer noopener"><img src={src} alt={description} style={{width: '100%'}} /></a>
+                        <div className={title}>
+                        <p>{title}</p>
+                        </div>
+                    </div>
+                ))}
+                    </div>
+                        </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalIdiomas}>
+                    Cerrar
+                    </Button>
+                </Modal.Footer>
+                </Modal>
+            </div>
+        </div>
+
     </div>
 </div>
 </section>;
