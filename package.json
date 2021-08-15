@@ -1,6 +1,7 @@
-{
+﻿{
   "name": "juantorchia-cv",
   "version": "1.0.0",
+  "homepage":  "https://juantorchia.github.io/juantorchia-cv/",
   "description": "",
   "main": "index.js",
   "scripts": {
