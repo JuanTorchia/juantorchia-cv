@@ -18,8 +18,9 @@ class Hero extends React.Component {
             <h1 className="font-weight-medium mt-4 mb-1 text-uppercase">Soy</h1>
             <h1 className="font-weight-medium mb-3 text-uppercase">Juan Torchia</h1>
             <p className="font-size-16 text-muted my-4">
-              Soy fanatico de la tecnologia, trabajo en el area hace mas de 10 años <br />
-              Siempre estoy investigando nuevas tecnologias para poder desarrollar mis proyectos profesionales y personales.
+              Trabajo en sistemas desde mis 18 años, actualmente me desempeño como desarrollador Java.<br />
+              Me interesa y gusta estar siempre realizando projectos e implementando nuevas tecnolgias.<br />
+              Estoy estudiando en la UBA la carrea de Licenciado en Ciencias de la Computación.
             </p>
             <a href="#" className="btn btn-outline-dark">Descargar CV</a>
           </div>

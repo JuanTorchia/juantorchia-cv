@@ -39,9 +39,9 @@ return <section className="section" id="about">
         </dl>
         <div className="row">
           <div className="col-12 pt-xl-5 pt-3">
-            <h6 className="font-weight-semibold">Soy Juan, Desarrollador y DevOps</h6>
+            <h6 className="font-weight-semibold">Soy Juan, Desarrollador de Software</h6>
             <p className="text-muted mt-xl-3 mt-2">
-              Hola soy Juan Torchia, actualmente estoy realizando la Carrera Ciencias de la Computación, trabajo en sistemas desde mis 18 años. Fui aprendiendo a realizar paginas webs y aplicaciones desde muy chico. Actualmente me estoy especilizando en Desarrollo Java para poder volcar todos mis conocimientos en Infraestructura en servidores y poder destacar como desarrollador. Mi Meta es trabajar en el desarrallo de una aplicacion que se utilize a nivel mundial.
+              Comence a programar hace varios años, fui aprendiendo a realizar paginas webs con PHP y aplicaciones desde muy chico. Fui mejorando en las paginas tanto en Javascript HTML y CSS, SASS. Rect, Nodejs, Webpack y realizar deploys aplicando la metodolgia devops  Actualmente me estoy especilizando en Desarrollo Java por mi actual trabajo, siempre estoy intentnado volcar todos mis conocimientos y experiencia de Infraestructura en servidores y poder destacarme como desarrollador. Mi Meta es trabajar en el desarrallo de una aplicacion de gran escala que se utilize a nivel mundial.
             </p>
             <a href="#" className="btn btn-outline-dark mt-3">Contactame</a>
           </div>
