@@ -25,7 +25,7 @@ class NavBar extends React.Component {
           <a className="nav-link" href="#service">Especialidades</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#portfolio">Portfolio</a>
+          <a className="nav-link" href="#portfolio">Proyectos</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#contact">Contacto</a>

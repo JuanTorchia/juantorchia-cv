@@ -1,10 +1,12 @@
 import React from "react";
 import LinkedinIcon from 'remixicon-react/LinkedinFillIcon';
-import MiSetup from '../assets/images/miSetup.jpg'
+import GithubIcon from 'remixicon-react/GithubFillIcon';
+import TwitterIcon from 'remixicon-react/TwitterFillIcon';
+import MiSetup from '../assets/images/heroactual.gif'
 
 class Hero extends React.Component {
     render() {
-        return <section className="hero-6 position-relative align-items-center justify-content-center d-flex" style={{backgroundImage: "url(" + MiSetup + ")"}
+        return <section className="hero-6 position-relative d-flex" style={{backgroundImage: "url(" + MiSetup + ")"}
         } id="home">
   <div className="hero-6-overlay" />
   <div className="container">
@@ -12,14 +14,14 @@ class Hero extends React.Component {
       <div className="col-md-8">
         <div className="content-box position-relative">
           <div className="hero-6-content rounded bg-white position-relative p-5 mt-sm-5">
-            <span className="position-relative text-uppercase font-weight-medium font-size-12 text-white bg-primary comment">Hola</span>
+            <span className="position-relative text-uppercase font-weight-medium font-size-12 text-white bg-dark comment">Hola</span>
             <h1 className="font-weight-medium mt-4 mb-1 text-uppercase">Soy</h1>
             <h1 className="font-weight-medium mb-3 text-uppercase">Juan Torchia</h1>
             <p className="font-size-16 text-muted my-4">
               Soy fanatico de la tecnologia, trabajo en el area hace mas de 10 años <br />
               Siempre estoy investigando nuevas tecnologias para poder desarrollar mis proyectos profesionales y personales.
             </p>
-            <a href="#" className="btn btn-primary">Descargar CV</a>
+            <a href="#" className="btn btn-outline-dark">Descargar CV</a>
           </div>
         </div>
       </div>
@@ -27,10 +29,10 @@ class Hero extends React.Component {
   </div>
   <div className="hero-social-icon d-none d-md-block">
     <a className="social-media bg-white border-bottom" href="#"><LinkedinIcon className="ri-facebook-fill" /></a>
-    <a className="social-media bg-white border-bottom" href="#"><LinkedinIcon className="ri-twitter-fill" /></a>
-    <a className="social-media bg-white" href="#"><LinkedinIcon className="ri-github-fill" /></a>
+    <a className="social-media bg-white border-bottom" href="#"><GithubIcon className="ri-github-fill" /></a>
+    <a className="social-media bg-white" href="#"><TwitterIcon className="ri-github-fill" /></a>
   </div>
-</section>; 
+</section>;
     }
 }
 

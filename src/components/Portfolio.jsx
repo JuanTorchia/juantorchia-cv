@@ -1,7 +1,7 @@
 import React from "react";
-import PortfolioWork1 from '../assets/images/work-1.jpg';
-import PortfolioWork2 from '../assets/images/work-2.jpg';
-import PortfolioWork3 from '../assets/images/work-3.jpg';
+import PortfolioWork1 from '../assets/images/work-iot.png';
+import PortfolioWork2 from '../assets/images/work-2.png';
+import PortfolioWork3 from '../assets/images/work-pig.png';
 import PortfolioWork4 from '../assets/images/work-4.jpg';
 import PortfolioWork5 from '../assets/images/work-5.jpg';
 import { Modal, Button } from "react-bootstrap";
@@ -37,7 +37,7 @@ return <section className="section" id="portfolio">
           className="d-flex align-items-center justify-content-center"
           style={{ height: "100vh" }}
         >
-          <Button variant="primary" className="btn btn-primary mt-3" onClick={this.openModalCV}>
+          <Button variant="primary" className="btn btn-outline-dark mt-3" onClick={this.openModalCV}>
             CV personal en REACT
           </Button>
         </div>
@@ -67,7 +67,7 @@ return <section className="section" id="portfolio">
                 Parti con el boceto de mi CV en HTML, CSS Y JS</p>
                 </Modal.Body>
           <Modal.Footer>
-            <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalCV}>
+            <Button variant="primarys" className="btn btn-outline-dark mt-3" onClick={this.closeModalCV}>
               Cerrar
             </Button>
           </Modal.Footer>
@@ -78,14 +78,14 @@ return <section className="section" id="portfolio">
       </div>
       <div className="col-lg-4 col-md-6 mt-4 pt-2 web-design graphic-design">
         <div className="position-relative rounded overflow-hidden img-box">
-          <img className="img-fluid" src={PortfolioWork2} alt />
+          <img className="img-fluid" src={PortfolioWork1} alt />
           <div className="item-caption">
             <div className="text-center text-white work-content">
             <div
           className="d-flex align-items-center justify-content-center"
           style={{ height: "100vh" }}
         >
-          <Button variant="primary" className="btn btn-primary mt-3" onClick={this.openModalIOT}>
+          <Button variant="primary" className="btn btn-outline-dark mt-3" onClick={this.openModalIOT}>
             TorchiHost IOT
           </Button>
         </div>
@@ -115,7 +115,7 @@ return <section className="section" id="portfolio">
                 Parti con el boceto de mi CV en HTML, CSS Y JS</p>
                 </Modal.Body>
           <Modal.Footer>
-            <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalIOT}>
+            <Button variant="primarys" className="btn btn-outline-dark mt-3" onClick={this.closeModalIOT}>
               Cerrar
             </Button>
           </Modal.Footer>
@@ -133,7 +133,7 @@ return <section className="section" id="portfolio">
           className="d-flex align-items-center justify-content-center"
           style={{ height: "100vh" }}
         >
-          <Button variant="primary" className="btn btn-primary mt-3" onClick={this.openModalIOT}>
+          <Button variant="primary" className="btn btn-outline-dark mt-3" onClick={this.openModalIOT}>
             Pig Design
           </Button>
         </div>
@@ -163,7 +163,7 @@ return <section className="section" id="portfolio">
                 Parti con el boceto de mi CV en HTML, CSS Y JS</p>
                 </Modal.Body>
           <Modal.Footer>
-            <Button variant="primarys" className="btn btn-primary mt-3" onClick={this.closeModalPIG}>
+            <Button variant="primarys" className="btn btn-outline-dark mt-3" onClick={this.closeModalPIG}>
               Cerrar
             </Button>
           </Modal.Footer>

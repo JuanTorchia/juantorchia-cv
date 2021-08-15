@@ -12,13 +12,13 @@ return <div>
   <footer className="footer" style={{backgroundImage: "url(" + FooterBG + ")"}}>
     <div className="container">
       <div className="row py-sm-5 py-3">
-        <div className="col-lg-4 col-md-3 text-white mt-4">
-          <p className="mb-0">CABA, Buenos Aires</p>
-          <p className="mt-2">Argentina</p>
+        <div className="col-lg-4 col-md-3  mt-4">
+          <p className="mb-0"></p>
+          <p className="mt-2"></p>
         </div>
-        <div className="col-lg-3 col-md-3 offset-lg-1 offset-md-1 text-white mt-4">
-          <p className="mb-0">j.s.torchia@gmail.com</p>
-          <p className="mt-2">+54-911-2387-2075</p>
+        <div className="col-lg-3 col-md-3 offset-lg-1 offset-md-1  mt-4">
+          <p className="mb-0"></p>
+          <p className="mt-2"></p>
         </div>
         <div className="col-lg-3 col-md-4 offset-lg-1 offset-md-1 mt-4">
           <ul className="list-unstyled">

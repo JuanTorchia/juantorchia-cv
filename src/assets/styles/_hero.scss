@@ -17,7 +17,7 @@
 
 }
 .hero-social-icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: 1;
@@ -158,7 +158,7 @@
 
 // hero-6
 .hero-6 {
-    height: 100vh;
+    height: 50vh;
     @include bg-center;
     .hero-6-overlay {
         background: linear-gradient(90deg,$gray-100 5%,$white 50%,rgba($black,0.4) 50%);

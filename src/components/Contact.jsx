@@ -16,30 +16,30 @@ return <section className="section bg-light" id="contact">
           <div className="row">
             <div className="col-md-6">
               <div className="form-group mb-4">
-                <input type="text" className="form-control" placeholder="NAME" id="name" />
+                <input type="text" className="form-control" placeholder="Nombre" id="name" />
               </div>
             </div>
             <div className="col-md-6">
               <div className="form-group mb-4">
-                <input type="email" className="form-control" placeholder="EMAIL" id="email" />
+                <input type="email" className="form-control" placeholder="Correo Electronico" id="email" />
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-12">
               <div className="form-group mb-4">
-                <input type="text" className="form-control" placeholder="SUBJECT" id="subject" />
+                <input type="text" className="form-control" placeholder="Asunto" id="subject" />
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-12">
               <div className="form-group mb-4">
-                <textarea className="form-control" placeholder="MESSAGE" rows={5} id="comments" defaultValue={""} />
+                <textarea className="form-control" placeholder="Mensaje" rows={5} id="comments" defaultValue={""} />
               </div>
             </div>
           </div>
-          <input type="submit" id="submit" name="send" className="btn btn-primary" defaultValue="Send message" />
+          <input type="submit" id="submit" name="send" className="btn btn-outline-dark" defaultValue="Enviar mensaje" />
         </form>
       </div>
     </div>
