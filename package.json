@@ -27,6 +27,9 @@
     "remixicon": "^2.5.0",
     "remixicon-react": "^1.0.0"
   },
+  "engines": {
+    "node": "= 14.x"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.13",
