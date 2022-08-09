@@ -1,6 +1,6 @@
 const galleryHtmlCSS = [
     {   id: 1,
-        src: 'src/assets/images/certificados/htmlycss/diploma-html-css.png',
+        src: '/src/assets/images/certificados/htmlycss/diploma-html-css.png',
         title: 'HTML y CSS',
         description: 'Diploma que certifica el curso de HTML y CSS' },
     {   id: 2,
